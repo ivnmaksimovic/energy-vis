@@ -1,6 +1,7 @@
 import express from "express";
 import request from "request";
 import cors from "cors";
+import { response as energyData } from "./tempEngApiResponse";
 
 const app = express();
 const PORT = process.env.PORT || 3173;
@@ -25,10 +26,16 @@ const options: cors.CorsOptions = {
 app.use(cors(options));
 
 app.get("/", (req, res) => {
-  res.send("Hello from Express");
+  res.send("Nothing to see here");
+});
+
+app.get("/api/installed_power_hardcoded", (req, res) => {
+   console.log('Returning local hardcoded data');
+  res.json(energyData);
 });
 
 app.get("/api/installed_power", (req, res) => {
+  console.log('Fetching data from https://api.energy-charts.info ...');
   const url =
     "https://api.energy-charts.info/installed_power?country=de&time_step=yearly&installation_decommission=false";
 

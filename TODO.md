@@ -8,7 +8,7 @@ https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-informa
 - [x] setup client and server with TS
 - [x] make a request to any endpoint in api
   https://api.energy-charts.info/#/power/installed_power_installed_power_get
-- [ ] Render data from one endpoint in any chart using some React Chart lib maybe
+- [x] Render data from one endpoint in any chart using some React Chart lib maybe
   https://github.com/plouc/nivo
   https://recharts.org/en-US/examples/CustomContentTreemap
   https://tremor.so/

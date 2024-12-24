@@ -1,6 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chartWrapper {
+  height: 600px;
+  width: 100%;
+  box-sizing: border-box;
 }
