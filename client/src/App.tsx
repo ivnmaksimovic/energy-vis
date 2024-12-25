@@ -35,8 +35,8 @@ const energySourcesToCompare = [
 ];
 
 const fetchData = async (): Promise<EnergyInstalledPowerRes> => {
-  // const response = await fetch("http://localhost:3173/api/installed_power");
-  const response = await fetch("http://localhost:3173/api/installed_power_hardcoded");
+  const response = await fetch("http://localhost:3173/api/installed_power");
+  // const response = await fetch("http://localhost:3173/api/installed_power_hardcoded");
   const result = await response.json();
 
   return result;
